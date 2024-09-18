@@ -295,10 +295,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.2
+  MaxDistance: 4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -371,6 +371,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &178956424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178956422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72071924f6236c14f87c58f0f7986ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasPrefab: {fileID: 8870750303014381627, guid: 3af81b2bb22b60348b47e8d0605411fe,
+    type: 3}
+  AlwaysTracked: 1
+  MaxDistance: 2
+  Scale: 1
 --- !u!1001 &189187868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1187,6 +1204,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: CCSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 3208528211867408455, guid: 358b0eb736b06da40986b005d9aa1146,
+        type: 3}
+      propertyPath: Database
+      value: 
+      objectReference: {fileID: 11400000, guid: 834f62c79d7c6c948beb4729b3ba6dc8,
+        type: 2}
     - target: {fileID: 4954665676858572601, guid: 358b0eb736b06da40986b005d9aa1146,
         type: 3}
       propertyPath: m_RootOrder
@@ -1430,6 +1453,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837324664885972823, guid: d45e8a6999317d2428a51593da44d3ab,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837324664885972823, guid: d45e8a6999317d2428a51593da44d3ab,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1837324665045843313, guid: d45e8a6999317d2428a51593da44d3ab,
         type: 3}
@@ -1734,6 +1767,24 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &1640431889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640431887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6765015c7496d41abb8873e08b5312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CloseCaptioned: 0
+  Clips:
+  - {fileID: 8300000, guid: e28c90b3e8525e24e8ffcc0a5e81f376, type: 3}
+  - {fileID: 8300000, guid: cb9c766249a53f94882893cd9d551dc8, type: 3}
+  - {fileID: 8300000, guid: 6cc51a4bbc69b8146b6170eb6efeae2e, type: 3}
+  - {fileID: 8300000, guid: ef2663bec11889c428b2e990047067fc, type: 3}
 --- !u!198 &1948420575 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6694755292031384741, guid: 9d10edaecc9279d41baf1d5e360afc08,
